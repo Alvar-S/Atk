@@ -3,65 +3,63 @@ import Sivupohja from "../layouts/normisivu.astro";
 ---
 
 <style>
-    html {
-        font-family: sans-serif;
-    }
+  html {
+    font-family: sans-serif;
+  }
 
-    .iso {
-        flex: 2;
-    }
+  .iso {
+    flex: 2;
+  }
 
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
 
-    h1 {
-        text-align: center;
-        color: white;
-        line-height: 100px;
-        margin: 0;
-    }
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
 
-    article {
-        padding: 10px;
-        margin: 10px;
-        background: rgb(251, 251, 251);
-        flex: 1;
-    }
-    section {
-        display: flex;
-    }
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgb(251, 251, 251);
+    flex: 1;
+  }
+  section {
+    display: flex;
+  }
 </style>
 <Sivupohja
-    herokuva="images/heroatk.png"
-    ylapalkivari="#000000"
-    alapalkivari="#000000"
-    heroteksti=""
-    heropainike={true}
+  herokuva="images/heroatk.png"
+  ylapalkivari="#000000"
+  alapalkivari="#000000"
+  heroteksti=""
+  heropainike={true}
 >
-    <section>
-        <article class="iso">
-            <p> <center>
-                <div id="slideshow">
-                    <img src="atkkorjaus.jpg" alt="auto" class="active">
-                    <img src="auto.jpeg" alt="auto">
-                  </div>
-
-                <img src="images/auto.jpeg" alt="auto" />
-                <br /></center>
-                <center><br>
-                Ota yhteyttä niin voimme auttaa sinua.<br>
-                Yhteistietot:<br>
-                Alvar Stenroth
-                <br>
-                Puh: 044-2944273
-                <br>
-                alvar.stenroth@gmail.com
-                <br>
-                Ikaalinen 39500
-                
-            </p>
-        </article>
-    </section>
+  <section>
+    <article class="iso">
+      <p>
+        <center>
+          <img src="images/auto.jpeg" alt="auto" />
+          <br /></center
+        >
+        <center
+          ><br />
+          Ota yhteyttä niin voimme auttaa sinua.<br />
+          Yhteistietot:<br />
+          Alvar Stenroth
+          <br />
+          Puh: 044-2944273
+          <br />
+          alvar.stenroth@gmail.com
+          <br />
+          Ikaalinen
+        </center>
+      </p>
+    </article>
+  </section>
 </Sivupohja>
