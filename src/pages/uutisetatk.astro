@@ -3,67 +3,73 @@ import Sivupohja from "../layouts/normisivu.astro";
 ---
 
 <style>
-    html {
-        font-family: sans-serif;
-    }
+  html {
+    font-family: sans-serif;
+  }
 
-    .iso {
-        flex: 2;
-    }
+  .iso {
+    flex: 2;
+  }
 
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
 
-    h1 {
-        text-align: center;
-        color: white;
-        line-height: 100px;
-        margin: 0;
-    }
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
 
-    article {
-        padding: 10px;
-        margin: 10px;
-        background: rgb(251, 251, 251);
-        flex: 1;
-    }
-    section {
-        display: flex;
-    }
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgb(251, 251, 251);
+    flex: 1;
+  }
+  section {
+    display: flex;
+  }
 </style>
 <Sivupohja
-    herokuva="images/heroatk.png"
-    ylapalkivari="#000000"
-    alapalkivari="#000000"
-    heroteksti=""
-    heropainike={true}
+  herokuva="/images/heroatk.png"
+  ylapalkivari="#000000"
+  alapalkivari="#000000"
+  heroteksti=""
+  heropainike={true}
 >
-    <section>
-        <article class="iso">
-            <p> <center>
-                <img src="images/uutiset1.png" alt="" width="300" height="200" />
-                <br /></center>
-                <center><br>
-               Tänne tuomme uusia Uutisia kaiksetsa mitkä liityvat atk puolelle toki myös <br>
-               niitä mitä voisi olla ajankohtaista.Katsomme viellä mitä muuta voisin lisätä tänne.<br>
-               <br><br/>
-               Venäläinen tietoturvayhtiö Kaspersky on oma-aloitteisesti poistanut ohjelmistonsa yhdysvaltalaisten asiakkaidensa tietokoneilta.
-
-                Moni Kasperskyn ohjelmiston käyttäjä on yllättynyt, sillä yhtiö asensi samalla ilman ennakkovaroitusta käyttäjien tietokoneille UltraAV-ohjelmiston, 
-                kirjoittaa tietoturvaan keskittynyt uutispalvelu The Bleeping Computer.
-
-                Tivi pitää sinut ajan tasalla Tilaa uutiskirjeemme ja saat it-alan tärkeimmät puheenaiheet suoraan sähköpostiisi.
-                UltraAV on vpn-ratkaisuistaan parhaiten tunnetun Pango Groupin tuote. Kasperskyn mukaan vaihto UltraAV:hen takaa suojauksen jatkuvuuden, 
-                mutta monille käyttäjille muutos tuli yllätyksenä ja herätti huolta laitteiden turvallisuudesta.
-
-                Kasperskyn ohjelmiston poistamisen taustalla on yhtiön päätös lopettaa toimintansa Yhdysvalloissa sen jälkeen, 
-                kun maan hallitus lisäsi yrityksen kansalliseen turvallisuusuhkien listalle ja kielsi sen tuotteiden myynnin ja päivitykset syyskuusta 2024 alkaen.
-                            
-            </p>
-            <img src="" alt="" width="300" height="200" / >
-
-        </article>
-    </section>
+  <section>
+    <article class="iso">
+      <p>
+        <center>
+          <img src="/images/uutiset1.png" alt="" width="300" height="200" />
+          <br /></center
+        >
+        <center
+          ><br />
+          Tänne tuomme uusia Uutisia kaiksetsa mitkä liityvat atk puolelle toki myös
+          <br />
+          niitä mitä voisi olla ajankohtaista.Katsomme viellä mitä muuta voisin lisätä
+          tänne.<br />
+          <br /><br />
+          Venäläinen tietoturvayhtiö Kaspersky on oma-aloitteisesti poistanut ohjelmistonsa
+          yhdysvaltalaisten asiakkaidensa tietokoneilta. Moni Kasperskyn ohjelmiston
+          käyttäjä on yllättynyt, sillä yhtiö asensi samalla ilman ennakkovaroitusta
+          käyttäjien tietokoneille UltraAV-ohjelmiston, kirjoittaa tietoturvaan keskittynyt
+          uutispalvelu The Bleeping Computer. Tivi pitää sinut ajan tasalla Tilaa
+          uutiskirjeemme ja saat it-alan tärkeimmät puheenaiheet suoraan sähköpostiisi.
+          UltraAV on vpn-ratkaisuistaan parhaiten tunnetun Pango Groupin tuote. Kasperskyn
+          mukaan vaihto UltraAV:hen takaa suojauksen jatkuvuuden, mutta monille käyttäjille
+          muutos tuli yllätyksenä ja herätti huolta laitteiden turvallisuudesta.
+          Kasperskyn ohjelmiston poistamisen taustalla on yhtiön päätös lopettaa
+          toimintansa Yhdysvalloissa sen jälkeen, kun maan hallitus lisäsi yrityksen
+          kansalliseen turvallisuusuhkien listalle ja kielsi sen tuotteiden myynnin
+          ja päivitykset syyskuusta 2024 alkaen.
+        </center>
+        <img src="" alt="" width="300" height="200" />
+      </p>
+    </article>
+  </section>
 </Sivupohja>

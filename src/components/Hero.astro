@@ -1,54 +1,55 @@
 ---
 const {
-    otsikko = "Tervetuloa",
-    tausta = "images/hero.jpg",
-    painike = true,
+  otsikko = "Tervetuloa",
+  tausta = "/images/hero.jpg",
+  painike = true,
 } = Astro.props;
 ---
+
 <style>
-    .hero-image {
-        height: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+  .hero-image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
-    .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgb(243, 242, 248);
-    }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(243, 242, 248);
+  }
 
-    .hero-text button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 10px 25px;
-        color: rgb(245, 238, 238);
-        background-color: #ffffff;
-        text-align: center;
-        cursor: pointer;
-    }
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(245, 238, 238);
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+  }
 
-    .hero-text button:hover {
-        background-color: #555;
-        color: rgb(253, 252, 252);
-    }
+  .hero-text button:hover {
+    background-color: #555;
+    color: rgb(253, 252, 252);
+  }
 </style>
 <div class="hero-image" style={{ backgroundImage: 'url("' + tausta + '")' }}>
-    <div class="hero-text">
-        <h1 style="font-size:50px">{otsikko}</h1>
+  <div class="hero-text">
+    <h1 style="font-size:50px">{otsikko}</h1>
 
-        {
-            painike && (
-                <button>
-                    <a href="/navi">Tapahtumat</a>
-                </button>
-            )
-        }
-    </div>
+    {
+      painike && (
+        <button>
+          <a href="/navi">Tapahtumat</a>
+        </button>
+      )
+    }
+  </div>
 </div>
