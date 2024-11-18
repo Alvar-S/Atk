@@ -34,24 +34,28 @@ import Sivupohja from "../layouts/normisivu.astro";
   }
 </style>
 <Sivupohja
-  herokuva="images/heroatk.png"
+  herokuva="/images/heroatk.png"
   ylapalkivari="#000000"
   alapalkivari="#000000"
   heroteksti=""
+  heropainike
+  päälä:True
+  Pois:
+  False
   heropainike={true}
 >
   <section>
     <article class="iso">
       <p>
         <center>
-          <img src="//images//auto.jpeg" alt="auto" />
+          <img src="/images/rikki.jpg" alt="auto" />
           <br /></center
         >
         <center
           ><br />
           <div id="slideshow">
-            <img src="atkkorjaus.jpg" class="active" />
-            <img src="auto.jpeg" />
+            <img src="/atkkorjaus.jpg" class="active" />
+            <img src="/auto.jpeg" />
           </div>
           Tänne tuomme uusia Uutisia kaiksetsa mitkä liityvat atk puolelle toki myös
           <br />
