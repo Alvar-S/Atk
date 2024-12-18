@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input[type="text"].lomake1,
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"].lomake1 {
+        width: 100%;
+        background-color: #664caf;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"].lomake1:hover {
+        background-color: #45a049;
+      }
+      .tausta1 {
+        border-radius: 5px;
+        background-color: #5dbbe0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="lomakkeeni"
+      method="post"
+      action="mailto:alvar.stenroth@gmail.com"
+    >
+    </form>
+    <div class="tausta1">
+      <form action="/tiedot.php">
+        <label for="eNimi"> Etunimi </label>
+        <input
+          class="lomake1"
+          type="text"
+          id="eNimi"
+          name="firstname"
+          placeholder="Anna etunimesi..."
+        />
+
+        <label for="sNimi"> Sukunimi </label>
+        <input
+          class="lomake1"
+          type="text"
+          id="sNimi"
+          name="lastname"
+          placeholder="Anna sukunimesi.."
+        />
+        <label for="sNimi"> Kirjoita </label>
+        <input
+          class="lomake1"
+          type="text"
+          id="sNimi"
+          name="lastname"
+          placeholder="Vika.."
+        />
+
+        <label for="country"> Kaupunki </label>
+        <select id="country" name="kaupunki">
+          <option value="Ikaalinen"> Ikaalinen </option>
+          <option value="Hämeenkyrö">Hämeenkyrö</option>
+          <option value="Tampere"> Tampere </option>
+
+          <input class="lomake1" type="submit" value="Lähetä" />
+        </select>
+      </form>
+    </div>
+  </body>
+</html>
