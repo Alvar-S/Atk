@@ -1,0 +1,122 @@
+---
+import sivupalkki from "../layouts/Sivupohja.astro";
+//
+---
+
+<style>
+  html {
+    font-family: sans-serif;
+  }
+
+  .iso {
+    flex: 2;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+  /*  margin-bottom: 10px: markinaali
+ */
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgb(251, 251, 251);
+    flex: 1;
+  }
+  section {
+    display: flex;
+    background-color: rgb(251, 251, 251);
+  }
+
+  .sivukuvat {
+    margin: 200px auto;
+    display:block
+  }
+</style>
+
+<Sivupohja
+  herokuva="/images/headbar.jpg"
+  ylapalkivari="#000000"
+  alapalkivari="#000000"
+  heroteksti=""
+  heropainike={false}
+>
+  <!-- päälä:True Pois: False -->
+
+  <section>
+    <!-- vasen puoli kuvista -->
+    <article>
+      <div>
+        
+          <img
+            class="sivukuvat"
+            src="/images/images.png"
+            alt=""
+            width="300"
+            height="200"
+          />
+        
+        
+          <img
+            class="sivukuvat"
+            src="/images/pc-logo.jpg"
+            alt=""
+            width="300"
+            height="200"
+          />
+        
+
+        
+          <img
+            class="sivukuvat"
+            src="/images/atkkorjaus.jpg"
+            alt=""
+            width="300"
+            height="200"
+          />
+        
+      </div>
+    </article>
+    <!-- Keskellä oleva sivu -->
+    <article class="iso teksti">
+      <h2></h2>
+      <img src="" alt="" width="300" height="200" />
+      <br /><br />
+    </article>
+
+    <!-- oikealla oleva sivu -->
+    <article>
+      <article>
+        <br /><br />
+        <center>
+          <img src="/" alt="" width="300" height="200" /></center
+        >
+        <center>
+          <img src="/" alt="" width="300" height="200" />
+        </center>
+        <br />
+    
+        <b></b>
+        <center>
+          <!-- valokuvan vaihto -->
+          <!-- <img src="" alt="" width="" height="" />  -->
+          <img src="" alt="" width="300" height="200" />
+        </center>
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><b></b>
+        <img src="" alt="" width="" height="" />
+      </article>
+    </article>
+  </section>
+</Sivupohja>

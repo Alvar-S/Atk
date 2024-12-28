@@ -23,6 +23,8 @@ import Sivupohja from "../layouts/Sivupohja.astro";
     line-height: 100px;
     margin: 0;
   }
+  /*  margin-bottom: 10px: markinaali
+ */
 
   article {
     padding: 10px;
@@ -32,6 +34,12 @@ import Sivupohja from "../layouts/Sivupohja.astro";
   }
   section {
     display: flex;
+    background-color: rgb(251, 251, 251);
+  }
+
+  .sivukuvat {
+    margin: 200px auto;
+    display:block
   }
 </style>
 
@@ -47,45 +55,39 @@ import Sivupohja from "../layouts/Sivupohja.astro";
   <section>
     <!-- vasen puoli kuvista -->
     <article>
-      <p>
-        <center>
-          <br /><br />
+      <div>
+        
           <img
+            class="sivukuvat"
             src="/images/images.png"
             alt=""
             width="300"
             height="200"
-          /></center
-        >
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <center>
+          />
+        
+        
           <img
+            class="sivukuvat"
             src="/images/pc-logo.jpg"
             alt=""
             width="300"
             height="200"
-          /></center
-        >
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <center>
+          />
+        
+
+        
           <img
+            class="sivukuvat"
             src="/images/atkkorjaus.jpg"
             alt=""
             width="300"
             height="200"
-          /></center
-        >
-        <br /><br />
-        <br /><br />
-        <br /><br />
-      </p>
+          />
+        
+      </div>
     </article>
     <!-- Keskellä oleva sivu -->
-    <article class="iso">
+    <article class="iso teksti">
       <h2>Mikropaja-Ikaalinen</h2>
       <img src="/images/rikki.jpg" alt="" width="300" height="200" />
       <br /><br />
@@ -142,7 +144,7 @@ import Sivupohja from "../layouts/Sivupohja.astro";
       <h3>Edullinen hinnoittelu</h3>
 
       <li>
-        Kilpailukykyiset hinnat avoimella hinnoittelulla – ei piilomaksuja, vain
+        Kilpailukykyiset hinnat avoimella hinnoittelulla ei piilomaksuja, vain
         loistava palvelu.
       </li>
 
