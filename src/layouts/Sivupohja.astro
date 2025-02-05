@@ -2,13 +2,13 @@
 import Alapalkki from "../components/Alapalkki.astro";
 import Hero from "../components/Hero.astro";
 import Valikko from "../components/Valikko.astro";
-import Nettisivu from "../layouts/Nettisivu.astro";
+import HtmlPohja from "../layouts/HtmlPohja.astro";
 
 const { title, heroteksti, herokuva, ylapalkivari, alapalkivari, heropainike } =
   Astro.props;
 ---
 
-<Nettisivu>
+<HtmlPohja>
   <Hero otsikko={heroteksti} tausta={herokuva} painike={heropainike} />
   <article>
     <Valikko taustavari={ylapalkivari} />
@@ -19,4 +19,4 @@ const { title, heroteksti, herokuva, ylapalkivari, alapalkivari, heropainike } =
 
     <Alapalkki taustavari={alapalkivari} />
   </article>
-</Nettisivu>
+</HtmlPohja>
