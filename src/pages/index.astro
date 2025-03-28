@@ -1,6 +1,7 @@
 ---
 import Sivupohja from "../layouts/Sivupohja.astro";
 //
+import Vaihtuvakuvat from "../components/Vaihtuvakuvat.astro";
 ---
 
 <style>
@@ -86,6 +87,7 @@ import Sivupohja from "../layouts/Sivupohja.astro";
     <!-- Keskellä oleva sivu -->
     <article class="iso teksti">
       <h2>Mikropaja-Ikaalinen</h2>
+      <Vaihtuvakuvat />
       <img src="/images/rikki.jpg" alt="" width="300" height="200" />
       <br /><br />
 
@@ -106,7 +108,7 @@ import Sivupohja from "../layouts/Sivupohja.astro";
       yhteydenottokehotuksesta: "Ota yhteyttä jo tänään ja suunnitellaan yhdessä
       juuri sinulle sopiva verkkosivuratkaisu!"
 
-      <h3>Tietokone Palvelu ja Korjaus.</h3>
+      <h4>Tietokone Palvelu ja Korjaus.</h4>
       <li>
         Laitteiden asennus ja huolto: tietokoneet, tulostimet, verkkolaitteet.
       </li>
@@ -132,12 +134,12 @@ import Sivupohja from "../layouts/Sivupohja.astro";
 
       <li>Teen myös netti kotisivuja yritys ja yksityishenkilöille.</li>
 
-      <h3>Asiantunteva osaaminen</h3>
+      <h4>Asiantunteva osaaminen</h4>
       <li>Laaja kokemus ja osaaminen.</li>
       <li>Nopea ja ystävällinen palvelu.</li>
       <li>Räätälöidyt ratkaisut juuri sinulle.</li>
 
-      <h3>Edullinen hinnoittelu</h3>
+      <h4>Edullinen hinnoittelu</h4>
       <li>
         Kilpailukykyiset hinnat avoimella hinnoittelulla ei piilomaksuja, vain
         loistava palvelu.
