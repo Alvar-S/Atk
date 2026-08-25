@@ -1,0 +1,61 @@
+---
+import "swiper/css/bundle";
+---
+
+<style>
+  img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  body {
+    padding-top: 60px;
+  }
+  .mySwiper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+</style>
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/headbar.jpg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/maisema.jpg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/peli.jpg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Mikropaija-ikaalinen.png" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/win11.png" alt="" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+<script>
+  import Swiper from "swiper/bundle";
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
