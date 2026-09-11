@@ -9,10 +9,8 @@ const { taustavari = "#333" } = Astro.props;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-
-  .valikko li {
-    float: right;
+    display: flex;
+    justify-content: right;
   }
 
   .valikko li a {
@@ -28,8 +26,8 @@ const { taustavari = "#333" } = Astro.props;
   }
 </style>
 <ul class="valikko" style={{ backgroundColor: taustavari }}>
-  <li><a href="/index.astro">etusivu</a></li>
+  <li><a href="/">Etusivu</a></li>
   <li><a href="/uutisetatk">Uutiset</a></li>
-  <li><a href="/hinnasto">hinnasto</a></li>
+  <li><a href="/hinnasto">Hinnasto</a></li>
   <li><a href="/yhteystiedot">Yhteistiedot</a></li>
 </ul>
